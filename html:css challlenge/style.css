@@ -1,0 +1,206 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+#mainTitle {
+	color: rgb(238, 160, 91);
+	text-align: center;
+}
+
+#nav {
+	text-align: end;
+	font-size: large;
+}
+
+#band-title {
+	color: green;
+}
+
+.band-list {
+	border: 2px solid black;
+}
+
+.band-box li {
+	list-style-type: none;
+	font-size: larger;
+}
+
+#gavinDance {
+	text-decoration: 2px underline;
+	font-style: italic;
+}
+#tuna {
+	background-color: lightblue;
+	color: navy;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#brie {
+	background-color: ivory;
+	color: brown;
+	font-style: italic;
+	padding: 5px;
+	border: 1px solid #c69c6d;
+}
+
+#salmon {
+	background-color: salmon;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 8px;
+	text-transform: uppercase;
+}
+
+#grilledCheese {
+	background-color: goldenrod;
+	color: white;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px black;
+	padding: 5px;
+	border: 2px solid darkorange;
+}
+
+#fishFinger {
+	background-color: orange;
+	color: darkred;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 8px;
+	text-decoration: underline;
+}
+
+#chip {
+	background-color: #f8d568;
+	color: brown;
+	padding: 5px;
+	font-weight: bold;
+	border: 2px dashed #a0522d;
+}
+
+#cress {
+	background-color: lightgreen;
+	color: darkgreen;
+	font-style: italic;
+	padding: 5px;
+	border-radius: 10px;
+}
+.sandwich-list li {
+	margin: 4px;
+}
+
+#sandwich-title {
+	text-decoration: underline;
+	font-style: italic;
+}
+
+#darkKnight {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 0 0 5px #ff0000;
+	padding: 5px;
+	border: 2px solid grey;
+	font-family: 'Arial Black', sans-serif;
+}
+
+#zelda {
+	background-color: gold;
+	color: darkgreen;
+	font-weight: bold;
+	font-family: 'Times New Roman', serif;
+	padding: 5px;
+	border: 3px solid darkgreen;
+	border-radius: 8px;
+}
+
+#skyrim {
+	background-color: #2e2e2e;
+	color: silver;
+	font-style: italic;
+	text-transform: uppercase;
+	padding: 5px;
+	border: 2px solid white;
+	font-family: 'Georgia', serif;
+}
+
+#eldenRing {
+	background-color: black;
+	color: #d4af37;
+	font-style: italic;
+	font-weight: bold;
+	padding: 5px;
+	border: 3px solid #d4af37;
+	text-shadow: 0 0 5px #d4af37;
+	font-family: 'Times New Roman', serif;
+}
+
+#nfsUnderground {
+	background-color: darkblue;
+	color: lightblue;
+	font-weight: bold;
+	padding: 5px;
+	border: 3px solid neonblue;
+	text-shadow: 0 0 10px lightblue;
+	font-family: 'Impact', sans-serif;
+}
+
+#minecraft {
+	background-color: #228b22;
+	color: #8b4513;
+	font-family: 'Courier New', monospace;
+	font-weight: bold;
+	padding: 5px;
+	border: 2px solid #6b8e23;
+}
+
+#gta {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px;
+	font-family: 'Impact', sans-serif;
+	text-shadow: 2px 2px 5px #ff0000;
+	border: 3px solid #ff0000;
+}
+
+#osrs {
+	background-color: #4a4a4a;
+	color: #ffd700;
+	font-style: italic;
+	font-family: 'Georgia', serif;
+	padding: 5px;
+	border: 2px solid #a0522d;
+	border-radius: 10px;
+
+}
+.game-box li{
+    animation: 5s spinnow infinite linear;
+}
+
+@keyframes spinnow {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+#game-title {
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px;
+	font-family: 'Impact', sans-serif;
+	text-shadow: 2px 2px 5px #ff0000;
+}
+.game-box ul {
+	list-style-type: none;
+	display: flex;
+	gap: 20px;
+}

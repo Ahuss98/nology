@@ -1,0 +1,73 @@
+$german: 600px;
+$belgian: 900px;
+
+@mixin vertical-style {
+    width: 100px;
+    height: 150px;
+}
+
+body{
+    width: 300px;
+    height: 150px;
+}
+
+div {
+    border: 2px solid black;
+    width: 300px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (max-width: $german) {
+    .div1 {
+        background-color: black;
+    }
+    .div2 {
+        background-color: red;
+    }
+    .div3 {
+        background-color: yellow;
+    }
+}
+
+@media only screen and (min-width: ($german + 1)) and (max-width: $belgian) {
+
+    body{
+        display: flex;
+    }
+    .div1 {
+        background-color: black;
+       @include vertical-style;
+    }
+    .div2 {
+        background-color: yellow;
+        @include vertical-style;
+    }
+    .div3 {
+        background-color: red;
+        @include vertical-style;
+    }
+}
+
+@media only screen and (min-width: ($belgian + 1)) {
+    body {
+            display: flex;
+        }
+    
+        .div1 {
+            background-color: green;
+            @include vertical-style;
+        }
+    
+        .div2 {
+            background-color: white;
+            @include vertical-style;
+        }
+    
+        .div3 {
+            background-color: orange;
+            @include vertical-style;
+        }
+}
