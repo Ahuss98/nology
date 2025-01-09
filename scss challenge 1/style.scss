@@ -39,7 +39,7 @@ div {
     }
     .div1 {
         background-color: black;
-       @include vertical-style;
+        @include vertical-style;
     }
     .div2 {
         background-color: yellow;
