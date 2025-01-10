@@ -1,4 +1,4 @@
-const day = 1;
+const day = 10;
 const message = 'Today is';
 
 switch (day) {
