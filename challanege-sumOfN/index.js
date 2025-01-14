@@ -34,3 +34,5 @@ const sum = () => {
 
 
 sum(10)
+
+const sumUpToN = (n) => (n * (n + 1)) / 2;
