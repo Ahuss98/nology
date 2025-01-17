@@ -6,17 +6,18 @@
 // ```javascript
 function sumOfOddNumbers(n) {
 	// Your code here
-	let total = 0;
-	for (let i = 0; i <= n; i++) {
-		if (i % 2 !== 0) {
-			total += i;
-			console.log(n);
-		}
+	let sum = 0;
+	let oddNumber = 1;
+
+	for (let i = 0; i < n; i++) {
+		sum += oddNumber;
+		oddNumber += 2; 
 	}
-	return total;
+
+	return sum;
 }
 
-console.log(sumOfOddNumbers(10)); // Output: 25 (1 + 3 + 5 + 7 + 9)
+console.log(sumOfOddNumbers(5)); // Output: 25 (1 + 3 + 5 + 7 + 9)
 // ```
 
 // ## Challenge 2: Reverse Digits
@@ -32,10 +33,9 @@ function reverseDigits(num) {
 	for (let i = string.length - 1; i >= 0; i--) {
 		newString += string[i];
 	}
-	return newString;
+	return +newString;
 }
-
-console.log(reverseDigits(12345)); // Output: 54321
+console.log(reverseDigits(1552345)); // Output: 5432551
 
 // ## Challenge 3: Multiplication Table
 
@@ -70,11 +70,11 @@ function smallestDivisor(num) {
 	let smallest = 0;
 	for (let i = 2; i <= num; i++) {
 		if (num % i === 0) {
-			smallest = i;
-			break;
+			return smallest = i;
+			// break;
 		}
 	}
-	return smallest;
+	// return smallest;
 }
 
 console.log(smallestDivisor(15)); // Output: 3
@@ -95,19 +95,19 @@ console.log(smallestDivisor(17)); // Output: 17 (Prime number)
 function isPrime(num) {
 	// Your code here
 	let counter = 0;
-    if(num === 1){
-        return false
-    }
+	if (num === 1) {
+		return false;
+	}
 	for (let i = 0; i <= num; i++) {
 		if (num % i === 0) {
-			counter ++;
+			counter++;
 		}
 	}
-    return counter <= 2 ? true : false
+	return counter <= 2 ? true : false;
 }
 
 console.log(isPrime(7)); // Output: true
-console.log(isPrime(10)); // Output: false
+console.log(isPrime(13)); // Output: false
 console.log(isPrime(2)); // Output: true
 console.log(isPrime(1)); // Output: false
 // ```
