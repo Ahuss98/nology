@@ -10,9 +10,9 @@ if(!input || !card || !submit){
 
 
 const findSearchTerm = () => {
-        const searchTerm = input.value
+    const searchTerm = input.value
     const answerArr = companies.filter(e => {
-        if(!e) throw new Error('no object')
+        // if(!e) throw new Error('no object')
         return e.name === searchTerm || e.industry === searchTerm
     })
     const answersStringArr = answerArr.map(e => {
